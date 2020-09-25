@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-3" id="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img class="mr-3" src="img/website-design.png" alt="" width="48" height="48">
+            <span>Configuración</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <form>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Json configuración</span>
+            </div>
+            <textarea aria-label="With textarea" class="form-control" id="textAreaJson"></textarea>
+        </div>
+
+        <div id="alerta"></div>
+
+
+        <div class="row">
+            <div class="col-md-5 mt-3">
+                <div id="qrCode"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 mt-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Web</span>
+                    </div>
+                    <input aria-label="With textarea" class="form-control" id="web" type="text"/>
+                </div>
+            </div>
+
+            <div class="col-md-5 mt-3">
+                <button class="btn btn-dark" disabled id="generateCode" type="button">Generate code</button>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-5 mt-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Contraseña</span>
+                    </div>
+                    <input aria-label="With textarea" class="form-control" id="pass" type="password"/>
+                </div>
+            </div>
+
+            <div class="col-md-5 mt-3">
+                <button class="btn btn-dark" disabled id="btnSave" type="button">Guardar</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase.js"></script>
+<script src="js/qrcode.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/config.js"></script>
+</body>
+</html>

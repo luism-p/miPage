@@ -1,0 +1,24 @@
+{
+  "Pescado": [
+    {
+      "nombre": "Chocos",
+      "tapa": 5,
+      "media": 7,
+      "racion": 10
+    },
+    {
+      "nombre": "Pez espada",
+      "precio": 5
+    }
+  ],
+  "Carnes": [
+    {
+      "nombre": "Secreto",
+      "precio": 12
+    },
+    {
+      "nombre": "Solomillo",
+      "precio": 9
+    }
+  ]
+}
